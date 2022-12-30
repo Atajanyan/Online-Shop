@@ -1,0 +1,133 @@
+@media screen and (max-width: 1240px) {
+  iframe{
+    object-fit: contain;
+  }
+  .main-video-container{
+    margin-top: -100px;
+    margin-bottom: -150px;
+}
+ .homePageDep{
+   margin-top: 80px;
+ }
+ .homePageDepTop{
+  flex-wrap: wrap;
+ }
+ .homePageDepTopImg{
+  width: 500px;
+  height: 520px;
+ }
+ .homePageDepTopImgNone{
+  display: none;
+ }
+}
+
+@media screen and (max-width: 1050px) {
+  .homePageDepTopImg{
+    width: 420px;
+    height: 450px;
+   }
+}
+
+@media screen and (max-width: 900px) {
+  .homePageDep{
+    margin-top: 30px;
+  }
+  .homePageDepBottom{
+    height: auto;
+  }
+  .homePageDepTopImg{
+    width: 320px;
+    height: 350px;
+   }
+  .text-shop button{
+    width: 150px;
+  }
+
+  .video-ad-container{
+    top: 15px;
+  }
+  .main-video-container{
+        height: auto;
+        margin-top: -160px;
+  }
+  iframe{
+    object-fit: contain;
+  }
+ 
+  .text-shop button {
+    height: 36px;
+    padding: 0 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .homePageDep{
+    margin-top: 0px;
+  }
+  .homePageDepTopImg{
+    width: 500px;
+    height: 530px;
+   }
+}
+
+
+@media screen and (max-width: 600px) {
+  .homePageDep{
+    margin-top: 30px;
+  }
+  .homePageDepTopImg{
+    width: 450px;
+    height: 480px;
+  }
+  .homePageDepBottom p{
+    font-size: 25px;
+  }
+  .text-shop button{
+    width: 130px;
+    font-size: 12px;
+  }
+  .video-ad-container{
+    top: 13px;
+  }
+  .main-video-container{
+    height: auto;
+    margin-top: -210px;
+    margin-bottom: -250px;
+}
+    .text-shop {
+        gap: 10px;
+        margin-right: 10px;
+      }
+      .text-shop span {
+        font-size: 20px;
+      }
+      .text-shop button {
+        height: 36px;
+        padding: 0 18px;
+      }
+}
+
+@media screen and (max-width: 500px) {
+  .homePageDepTopImg{
+    width: 350px;
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .homePageDepBottom p{
+    font-size: 20px;
+  }
+  .homePageDepTopImg{
+    width: 280px;
+    height: 310px;
+  }
+  .main-video-container{
+    height: auto;
+    margin-top: -250px;
+    margin-bottom: -250px;
+}
+    .text-shop span {
+        font-size: 15px;
+      }
+}

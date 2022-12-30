@@ -1,0 +1,110 @@
+.search-field {
+    position: relative;
+    border-radius: 8px;
+    margin-left: 50px;
+}
+
+.search-field form button {
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    height: 36px;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.search-field form input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+
+.search-field form input::placeholder {
+    color: black;
+}
+
+
+.search-field form input:focus {
+    border-bottom: 2px solid black;
+}
+
+.search-field form input:focus::placeholder {
+    color: rgba(0, 0, 0, 0.544);
+}
+
+.search-suggestions-container {
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 2px 6px 0px #0000009e;
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 150ms;
+    transform: translateY(-15px);
+}
+
+
+.search-suggestions-container.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.search-suggestions-container ul {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.search-suggestions-container ul li {
+    padding: 6px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.search-suggestions-container ul li:hover {
+    background-color: rgb(243 242 242);
+}
+
+
+.searched-products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.search-result-heading {
+    margin: 50px 50px 0 50px
+}
+
+
+.no-results {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loadingSpinner{
+    display: flex;
+    justify-content: center;
+}
+
+.no-results-heading {
+    text-align: center;
+    overflow: hidden;
+}

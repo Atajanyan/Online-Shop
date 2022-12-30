@@ -1,0 +1,91 @@
+.sign-form-page {
+   padding: 50px;
+   display: flex;
+   justify-content: space-evenly;
+   gap: 50px;
+   background-color: rgb(248, 248, 248);
+}
+
+.sign-form-header {
+    width: 300px;
+}
+
+
+.sign-form-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #5650504a;
+    background-color: white;
+}
+
+.sign-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.sign-form-container form div{
+display: flex;
+flex-direction: column;
+
+}
+
+.sign-form-container form div label::after {
+    content: '*';
+}
+
+.sign-form-container h1 {
+    display: inline-block;
+}
+
+
+.sign-form-container form button {
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-form-container form button:hover {
+    background-color: rgb(35, 35, 35);
+    filter: grayscale(100%);
+} 
+
+.password-matching-error {
+    font-size: 14px;
+    color: red;
+}
+
+@media screen and (max-width:600px) {
+    .sign-form-page{
+        flex-direction: column;
+    }
+    .sign-form-container input{
+        padding: 8px;
+    }
+    .sign-form-header{
+        width: 100%;
+    }
+    .sign-form-container form button{
+        width: 150px;
+    }
+}
+
+
+.signed-out-page {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.signed-out-page a {
+    color: black;
+}

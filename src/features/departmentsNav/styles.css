@@ -1,0 +1,51 @@
+.departments-nav {
+  text-align: center;
+  position: relative;
+}
+
+.departments-list {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 120px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgb(215, 215, 215)
+}
+
+.department-list-item {
+  float: left;
+  border-bottom: 2px solid transparent;
+  padding: 10px;
+}
+
+.department-list-item:hover {
+  border-bottom: 2px solid #010101;
+}
+
+
+.department-list-item a {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+}
+
+.department-list-item a {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 36px;
+}
+
+.department-list-item .active {
+  border-bottom: 2px solid #010101;
+}
+
+.department-list-item .active:hover {
+  border-bottom: 2px solid rgb(190, 189, 189);
+}
+
+.department-list-item:hover:has(.active) {
+  border-bottom: 2px solid transparent;
+}

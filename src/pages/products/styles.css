@@ -1,0 +1,103 @@
+.products-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 30px;
+}
+
+.skeleton{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product {
+    width: 300px;
+}
+
+.products_images {
+    width: 300px;
+    border-radius: 8px;
+}
+
+.products_images:hover {
+    box-shadow: 0px 0px 20px rgb(134, 134, 134);
+}
+
+.products_images_div {
+    position: relative;
+    cursor: pointer;
+}
+
+.sortByPrice {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+#sort {
+    padding: 10px;
+    padding-right: 30px;
+    gap: 10px;
+    border: 1px solid #e6e3de;
+    cursor: pointer;
+}
+
+#sort:focus {
+    border: 1px solid #e6e3de;
+    outline: none;
+}
+
+.sortByPrice {
+    position: relative;
+}
+
+.sortByPrice::after {
+    content: '\25BC';
+    appearance: none;
+    background-image: url(../../assets/001.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    color: #e6e3de;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    pointer-events: none;
+}
+
+.productsLikeIcon{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 25px;
+    transition: .3s;
+}
+
+.productsLikeIcon:hover {
+    font-size: 33px;
+}
+.loader{
+    margin-top: 5%;
+    text-align: center;
+    position: relative;
+}
+.loadBtn{
+    font-size: 35px;
+    cursor: pointer;
+}
+.loadText{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(42px);
+}
+.loadBtn:hover + .loadText{
+   opacity: 1;
+}
+

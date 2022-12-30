@@ -1,0 +1,91 @@
+@media screen and (max-width: 1100px) {
+  .product_details {
+    padding: 5px;
+  }
+  .product-title1 {
+    padding-left: 5px;
+  }
+  .product_info {
+    gap: 20px;
+  }
+  .product_image_div {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .animDiv {
+    display: none;
+  }
+  .add-cart-div {
+    position: relative;
+    height: 100px;
+  }
+  .cart-message-div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 10px;
+  }
+
+  .messageHide {
+    display: none;
+  }
+
+  .cart-message-div p {
+    position: absolute;
+    top: -20px;
+    animation: cartaddedmessage 2s linear forwards;
+    border: inherit;
+  }
+
+  @keyframes cartaddedmessage {
+    0%{
+      left: -200px;
+    }
+    10%{
+      left: 0;
+    }
+    80%{left: 0;}
+    100%{
+        left: -200px;
+    }
+  }
+
+  .button-add-cart-disabled{
+    background-color: grey;
+    width: 140px;
+    height: 40px;
+    border:1px solid rgb(206, 206, 206);
+    padding: 8px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .product_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product_image_div {
+    width: 80%;
+  }
+  .product_details_div {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button-add-cart {
+    width: 150%;
+  }
+  .button-add-cart:hover {
+    width: 170%;
+  }
+}

@@ -1,0 +1,41 @@
+
+.filterByCategory {
+    position: inherit;
+    right: 735px;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+#filter {
+    padding: 10px;
+    padding-right: 30px;
+    gap: 10px;
+    border: 1px solid #e6e3de;
+    cursor: pointer;
+}
+
+#filter:focus {
+    border: 1px solid #e6e3de;
+    outline: none;
+}
+
+.filterByCategory {
+    position: relative;
+}
+
+.filterByCategory::after {
+    content: '\25BC';
+    appearance: none;
+    background-image: url(../../../../../assets/001.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    color: #252525;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    pointer-events: none;
+}

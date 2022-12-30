@@ -1,0 +1,228 @@
+.sideNav{
+    height: 100%; 
+    width: 200px; 
+    position: fixed;
+     /* Fixed Sidebar (stay in place on scroll) */
+    top: 100; 
+    left: 0;
+    border-right: #d7d7d7 solid 1px;
+    background-color: white; 
+    /* overflow-x: hidden;  */
+    padding-top: 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.arrow{
+  position: fixed;
+  top: 380px;
+  left: 20px;  
+  z-index: 1;
+  font-size: 30px;
+}
+.arrow:hover + .sideNav{
+  opacity: 1;
+  visibility: visible;
+}
+
+.sideNav:hover{
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+
+}
+
+.sideNav:hover + .arrow{
+  opacity: 0;
+}
+
+.listedDeps {
+    list-style-type: none;
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .listedDeps .items {
+    display: flex;
+    float: left;
+    border-bottom: 2px solid transparent;
+    padding: 10px;
+    font-size: 20px;
+    font-family: emoji;
+    margin: 20px;
+    width: 250px;
+    cursor: pointer;
+  }
+
+  .items:hover {
+    border-bottom: #010101 2px solid;
+  }
+ .items div{
+  margin: 10px;
+ }
+
+ .inputContainer{
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.inputContainer >input{
+  display: flex;
+ width: 200px;
+ height: 24px;
+ text-align: center;
+ align-items: center;
+ margin: 10px;
+
+
+}
+
+.divImage{
+ 
+  display: flex;
+ 
+}
+.divImage .image{
+ display: inline;
+  text-align: center;
+  border: 1px solid black;
+  width: 72px;
+  height: 72px;
+  margin-left: 10px;
+}
+
+
+.addPosts{
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  border: 1px solid rgb(206, 206, 206);
+  padding: 8px 0px;
+  font-weight: 400;
+  font-size: 16px; 
+  background: black;
+  color: white;
+  cursor: pointer;
+  margin:130px auto;
+  top: 300px;
+  left: 30%;
+}
+
+.addPosts:hover{
+  font-size: 17px;
+}
+.addBtnDiv{
+  position: relative;
+  cursor: pointer;
+}
+.addProductBot{
+  position: absolute;
+  top: 60px;
+  right:250px;
+  width: 200px;
+  height: 40px;
+  border: 1px solid rgb(206, 206, 206);
+  padding: 8px 0px;
+  font-weight: 400;
+  font-size: 16px; 
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.addProductBot:hover {
+  font-size: 17px;
+  transition: .5s;
+}
+.editButton{
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  border: 1px solid rgb(206, 206, 206);
+  padding: 8px 0px;
+  font-weight: 400;
+  font-size: 16px; 
+  background: black;
+  color: white;
+  cursor: pointer;
+  margin:130px auto;
+  top: 300px;
+  left: 30%;
+}
+.editButton:hover{
+  font-size: 17px;
+}
+
+.popContainer{
+  min-height: 400px;
+  min-width: 500px;
+  background-color: antiquewhite;
+}
+.yesClick{
+  width: 80px;
+ height: 30px;
+ margin-left: 35%;
+ background-color: aliceblue;
+
+}
+.yesClick:hover{
+  background-color: black;
+  color: white;
+}
+.noClick{
+  width: 80px;
+  height: 30px;
+ margin-left: 2%;
+ background-color: aliceblue;
+}
+.noClick:hover{
+  background-color: black;
+  color: white;
+}
+.popContainer>p{
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 20%
+}
+
+
+
+
+.admin-home {
+  display: flex;
+  justify-content: center;
+}
+
+.admin-home div {
+  padding: 50px;
+  width: 400px;
+}
+.inputContainer{
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.divImage{
+  position: absolute;
+  top: 250px;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.deleteImgDiv{
+  position: relative;
+}
+
+.deleteImgDiv>span{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    cursor: pointer;
+}

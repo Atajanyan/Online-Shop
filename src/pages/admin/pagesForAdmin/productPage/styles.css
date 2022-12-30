@@ -1,0 +1,35 @@
+.products{
+    display: flex;
+}
+.productPage{
+    margin-left:auto; 
+    margin-right:auto;
+    border-spacing: 20px;
+}
+table {
+   margin-top: 100px;
+}
+.photoInTable{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+.productTD{
+    width: 150px;
+    text-align: center;
+}
+.icons{
+    text-align: center;
+    color: black;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.AdminPage{
+    position: absolute;
+    right: 20px;
+}
+.load{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+.sticky-header {
+    box-sizing: border-box;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    backdrop-filter: blur(32px);
+    transition: 1s;
+}
+
+.sticky-header:hover {
+    background-color: white;
+}
+
+.brand-logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 10px;
+}
+
+.search-logo-customer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.burgerMenu{
+    display: none;
+}
+
+.search-media{
+    display: none
+}
+
+.brand-logo {
+    text-align: flex-end;
+    padding-left: 150px;
+}
+
+.customer-fnav-container {
+   align-self: flex-end;
+   margin-right: 50px;
+}
+
+.menu_counteyner{
+    display: none;
+}

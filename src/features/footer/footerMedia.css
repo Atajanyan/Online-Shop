@@ -1,0 +1,49 @@
+
+@media screen and (max-width:900px) {
+    .footerContainer{
+        justify-content: flex-start;
+    }
+    .futter-container{
+        gap: 10px;
+    }
+    .footer-bottom-box{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .futter-container{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .email{
+        display: flex;
+    }
+    .footerContainer ul .subscribe .submit{
+        font-size: 13px;
+        padding: 0 5px;
+    }
+    .footerContainer .footer .social-icons ul{
+        justify-content: flex-start;
+        gap: 50px;
+    }
+   .footer-column h3 {
+    margin-top: 60px;
+   }
+   .futter-container ul .footer-heading{
+    display: flex;
+    justify-content: flex-start;
+   }
+   .footer-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .futter-container{
+    display: flex;
+    justify-content: flex-start;
+   }
+}

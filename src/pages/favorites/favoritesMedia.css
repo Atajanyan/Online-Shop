@@ -1,0 +1,45 @@
+
+@media screen and (max-width:600px) {
+    .favoriteHeader{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-left: 0;
+        justify-content: center;
+    }
+    
+    .favoriteHeader h1{
+        font-size: 25px;
+    }
+
+    .clearFavoritesContainer{
+        padding-right: 0;
+    }
+
+    .clearFavoritesContainer button{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .noFavorites{
+        font-size: 10px;
+    }
+
+    .noFavorites p{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .noFavorites h1{
+        font-size: 16px;
+    }
+    .noFavorites p{
+        font-size: 14px;
+        text-align: center;
+    }
+}

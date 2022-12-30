@@ -1,0 +1,53 @@
+.favoritesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.favoriteHeader {
+  position: relative;
+  padding-left: 150px;
+}
+
+.favoriteHeader p {
+  font-size: 25px;
+}
+
+.noFavorites {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.noFavorites .heart {
+  font-size: 100px;
+}
+
+.noFavorites p {
+  font-size: 18px;
+  padding: 3px;
+  margin: 0;
+}
+
+.clearFavoritesContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 150px;
+}
+
+.clearFavoritesContainer button {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid #e6e3de;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clearFavoritesContainer button:hover {
+  color: red;
+}

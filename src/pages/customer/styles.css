@@ -1,0 +1,292 @@
+.check-email-message {
+    color: red;
+}
+
+.resend-btn {
+    color: red;
+}
+
+
+.customer-page {
+    min-height: 400px;
+    background-color: #faf9f8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 100px;
+}
+
+.customer-page-header {
+    font-size: 22px;
+}
+
+.sticky-customer-sidebar {
+    display: flex;
+    width: 25%;
+    padding: 20px;
+}
+
+/* .sticky-customer-sidebar aside {
+    position: sticky;
+    top: 0;
+} */
+
+.sticky-customer-sidebar aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.customer-sidebar-item {
+    padding: 20px;
+    background-color: white;
+}
+
+.customer-sidebar-item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.customer-sidebar-item span {
+    font-size: 16px;
+}
+
+.customer-sidebar-item a:hover span  {
+    text-decoration: underline;
+    color: rgb(198, 62, 62);
+}
+
+.customer-sidebar-item .active span {
+    color: rgb(198, 62, 62);
+}
+
+.customer-sidebar-item .customer-sidebar-arrow {
+    margin-left: auto;
+}
+
+
+.main-page-container {
+    width: 50%;
+}
+
+/* customer account css */
+
+.customer-account-welcome-message {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 200;
+    background-color: white;
+}
+
+/* customer settings css */
+
+.customer-settings-container {
+    padding: 20px;
+    background-color: white;
+}
+
+.customer-settings-item {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.customer-settings-item div{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 8px;
+}
+
+.customer-settings-item-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.customer-settings-item button {
+    width: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #d7d7d7;
+    border: none;
+    transition: .2s;
+}
+
+.customer-settings-item button:hover {
+    background-color: #c7c6c6;
+}
+
+/* Address book css */
+
+
+.add-new-address button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #d7d7d7;
+    transition: .2s;
+}
+
+.add-new-address button:hover {
+    background-color: #d7d7d7;
+}
+
+
+
+/* Customer orders css */
+.customer-orders-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.customer-order {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+
+.customer-order h3 {
+    margin: 0;
+}
+
+.customer-order .items-arrow {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.customer-order .items-arrow span {
+    font-size: 30px;
+    align-self: flex-end;
+}
+
+.customer-order .qty-date-subtotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.customer-order-item {
+    width: 100px;
+}
+
+.customer-order-item img {
+    width: 100%;
+}
+
+.customer-orders-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.customer-orders-items {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* Order details css */
+
+.order-details-wrapper h4{
+    display: inline-block;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.order-number-date-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-number-date-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.order-number-date-container span {
+    font-size: 14px;
+}
+
+.order-number-date-container .order-number {
+    text-decoration: underline;
+}
+
+
+.order-details-container {
+    margin-top: 20px;
+    min-height: 200px;
+    background-color: white;
+}
+
+.order-details-container {
+    font-size: 14px;
+}
+
+.order-timeline {
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+.order-timeline .timeline-icon {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00853d;
+    font-size: 35px;
+}
+
+.order-timeline .timeline-icon::after {
+    content: '';
+    height: 20px;
+    border-left: 2px solid black;
+    
+}
+
+.order-timeline li {
+    display: flex;
+   padding: 5px 0;
+}
+
+.timeline-content-wrapper {
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.order-timeline li .order-timeline-item-title {
+    padding: 5px 0;
+}
+
+.timeline-content-wrapper p {
+    margin: 0;
+    padding-top: 8px;
+    color: #6b6b6b;
+    font-size: 14px;
+}
+

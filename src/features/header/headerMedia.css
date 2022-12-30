@@ -1,0 +1,261 @@
+@media screen and (max-width: 1250px) {
+  .text{
+    display: none;
+  }
+  .brand-logo{
+    padding-left: 0;
+  }
+  .customer-nav{
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu_counteyner {
+    display: block;
+    position: relative;
+    width: 100px;
+  }
+  .nav-container {
+    display: none;
+  }
+
+ .search_div{
+    display: none;
+ }
+
+  .search-div-container {
+    display: none;
+  }
+
+  .customer-nav-container {
+    display: none;
+  }
+
+  .customer-nav-container-media {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(233, 233, 233) ;
+
+  }
+
+  .customer-nav-container-media .customer-nav{
+    width: 200px;
+    padding-left: 60px;
+  }
+
+  .customer-nav-container-media .customer-nav:hover .user-dropdown,.cart-dropdown{
+   display: none;
+  }
+
+  .search-media {
+    display: block;
+    font-size: 20px;
+  }
+
+  .search-media-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .media-search-hover{
+    display: none;
+  }
+
+  .media-search-hover-active{
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: -25px;
+  }
+
+  .search-logo-customer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .burgerMenu {
+    opacity: 1;
+    display: block;
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    left: -100%;
+    transition: 0.5s;
+    background-color: white;
+    z-index: 101;
+    overflow: hidden;
+    border: 1px solid #e6e3de;
+  }
+
+  .burgerMenu_active {
+    opacity: 0;
+    width: 0;
+    height: 600px;
+    position: absolute;
+    left: -150px;
+    transition: 0.5s;
+    background-color: white;
+    z-index: 101;
+    overflow: hidden;
+  }
+
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s;
+    position: absolute;
+  }
+
+  .my_menu {
+    width: 40px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .line1 {
+    transform: translateY(-8px);
+  }
+
+  .line1_active {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .line3 {
+    transform: translateY(8px);
+  }
+
+  .line3_active {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .line2 {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    transition: 0.5s;
+    position: absolute;
+  }
+
+  .line2_active {
+    width: 0;
+  }
+
+  .department_media {
+    width: 100%;
+    height: 75vh;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 0px;
+    overflow-y: auto;
+    z-index: 1;
+  }
+
+  .mediaDep {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding: 10px;
+    padding-left: 90px;
+    color: black;
+    position: relative;
+  }
+
+  .mediaDep:hover{
+    text-decoration: underline;
+  }
+
+  .mediaDep span{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .mediaSubDep{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    background-color: rgb(240, 240, 240);
+  }
+
+  .mediaSubDepartment{
+    margin: 8px;
+    cursor: pointer;
+  }
+
+  .mediaSubDepartment:hover{
+    text-decoration: underline 2px;
+  }
+
+  .divOverleyActive{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+  }
+
+  .divOverley{
+    display: none;
+    
+  }
+
+  .department_media li a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 17px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .customer-nav-container-media .customer-nav{
+    padding-left: 0;
+  }
+
+  .mediaDep{
+    padding-left: 50px;
+  }
+
+    .brand-logo a{
+        font-size: 35px;
+        letter-spacing: 4px;
+    }
+    
+    .search-media{
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
+    .menu_counteyner{
+        width: 50px;
+    }
+
+    .search-logo-customer{
+        gap: 8px;
+    }
+
+    .line{
+        width: 30px;
+    }
+    
+    .line2_active {
+        width: 0;
+      }
+}
+
+@media screen and (max-width: 420px) {
+    .brand-logo a{
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+}

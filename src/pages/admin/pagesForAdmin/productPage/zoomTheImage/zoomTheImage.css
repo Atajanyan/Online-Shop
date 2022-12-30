@@ -1,0 +1,48 @@
+
+
+.popUp{
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 100vw;
+    max-height: 100vw;
+    background-color: rgba(0, 0, 0, 0.884);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.container{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    min-height: 200px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+.zoomedImg{
+    width: 100%;
+    height: 100%;
+}
+.closeButtonDiv{
+   position: absolute;
+   background-color: white;
+   font-size: 30px;
+   cursor: pointer;
+   z-index: 1;
+   background: none;
+   top: 10px;
+   right: 10px;
+}
